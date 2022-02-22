@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Montserrat:wght@400;700&family=Raleway:wght@400;500;600;800&family=Roboto:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+}
+body{
+    position: relative;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    
+}
+.course{
+    height: 40px;
+    width: 350px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    margin-right: 20px;
+    /* border: 1px solid gray; */
+}
+.course:focus{
+    /* outline: 2px solid blue; */
+    /* border: 1px solid red ; */
+}
+.credit{
+    height: 40px;
+    width: 130px;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.grades{
+    width: 100px;
+    height: 40px;
+    padding-left: 30px;
+}
+.items{
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 40px;
+    border-radius: 20px;
+}
+.fa-circle-plus{
+    font-size: 30px;
+    color: blue;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#calculate-btn{
+    background-color: rgb(143,38,236);
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    border-radius: 60%;
+    padding: 27px;
+    position:sticky;
+    left: 61%;
+    top: 33%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 500;
+}
+.semester-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#add-semester{
+    padding: 13px;
+    font-size: 20px;
+    color: white;
+    color: white;
+    outline: none;
+    border:none;
+    border-radius: 20px;
+    background-color: rgb(133,68,235);
+    cursor: pointer;
+    position:relative;
+    left: -17%;
+
+}
