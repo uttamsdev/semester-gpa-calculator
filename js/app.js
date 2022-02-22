@@ -114,6 +114,17 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
    const credit = document.getElementsByClassName('credit');
    for(let i = 0; i < credit.length; i++){
        credits[i] = credit[i].value;
+       if(isNaN(credits[i]) || credits[i] == ''){
+           alert('Enter credits');
+           return;
+       }
+       if(credits[i] == 1 || credits[i] == 3){
+
+       }
+       else{
+           alert('Wrong credits given. Credits can be either 1 or either 3');
+           return;
+       }
         if(allGrades[i] == 'A+'){
            multiply = 4 * credits[i];
            sum = sum + multiply;
