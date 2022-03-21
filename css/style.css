@@ -6,10 +6,7 @@
 }
 body {
   position: relative;
-  /* background-image: url(../Images/E1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; */
-  background-color: rgba(242, 211, 247, 0.952);
+  background-color: rgba(222, 225, 250, 0.952);
 }
 .banner{
     text-align: center;
@@ -24,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 40px;
 }
 .course {
   height: 40px;
@@ -63,7 +60,9 @@ body {
 }
 .fa-circle-plus {
   font-size: 30px;
-  color: blue;
+  color: crimson;
+  background-color: white;
+  border-radius: 50%;
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -91,7 +90,6 @@ body {
 #add-semester {
   padding: 13px;
   font-size: 20px;
-  color: white;
   color: white;
   outline: none;
   border: none;
@@ -130,3 +128,22 @@ body {
   display: none;
 }
 
+@media (max-width:668px) {
+   .items .course{
+       width: 90%;
+   }
+   .grades{
+       width: 32%;
+   }
+   .credit{
+       width: 20%;
+       padding-left: 15px;
+   }
+   .input-items{
+       margin-bottom: 3px;
+   }
+   .container{
+       margin: 0 20px;
+   }
+    
+}

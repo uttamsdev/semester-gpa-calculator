@@ -46,21 +46,6 @@ document.getElementById('add-semester').addEventListener('click', function(){
             </select>
             <input id="credit" class="credit${count} credit" type="text" placeholder="Credit">
             <br>
-            <input class="course" type="text" placeholder="Course Name(optional)">
-            <label for="cars">Grade:</label>
-            <select name="cars" id="cars" class="grades${count} grades">
-                <option value="A+">A+</option>
-                <option value="A">A</option>
-                <option value="A-">A-</option>
-                <option value="B+">B+</option>
-                <option value="B">B</option>
-                <option value="B-">B-</option>
-                <option value="C+">C+</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
-                <option value="F">F</option>
-            </select>
-            <input id="credit" class="credit${count} credit" type="text" placeholder="Credit">
             <br>
             <input class="course" type="text" placeholder="Course Name(optional)">
             <label for="cars">Grade:</label>
@@ -77,6 +62,24 @@ document.getElementById('add-semester').addEventListener('click', function(){
                 <option value="F">F</option>
             </select>
             <input id="credit" class="credit${count} credit" type="text" placeholder="Credit">
+            <br>
+            <br>
+            <input class="course" type="text" placeholder="Course Name(optional)">
+            <label for="cars">Grade:</label>
+            <select name="cars" id="cars" class="grades${count} grades">
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="B-">B-</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+            <input id="credit" class="credit${count} credit" type="text" placeholder="Credit">
+            <br>
             <br>
             <input class="course" type="text" placeholder="Course Name(optional)">
             <label for="cars">Grade:</label>
