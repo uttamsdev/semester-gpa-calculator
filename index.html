@@ -17,7 +17,7 @@
             <h3 class="semester-title">SEMESTER - 1</h3>
             <input class="course" type="text" placeholder="Course Name(optional)">
             <label for="cars">Grade:</label>
-            <select name="cars" id="cars" class="grades">
+            <select name="cars" id="cars" class="grades1 grades">
                 <option value="A+">A+</option>
                 <option value="A">A</option>
                 <option value="A-">A-</option>
@@ -29,11 +29,11 @@
                 <option value="D">D</option>
                 <option value="F">F</option>
             </select>
-            <input id="credit" class="credit" type="text" placeholder="Credit">
+            <input id="credit" class="credit1 credit" type="text" placeholder="Credit">
             <br>
             <input class="course" type="text" placeholder="Course Name(optional)">
             <label for="cars">Grade:</label>
-            <select name="cars" id="cars" class="grades">
+            <select name="cars" id="cars" class="grades1 grades">
                 <option value="A+">A+</option>
                 <option value="A">A</option>
                 <option value="A-">A-</option>
@@ -45,11 +45,11 @@
                 <option value="D">D</option>
                 <option value="F">F</option>
             </select>
-            <input id="credit" class="credit" type="text" placeholder="Credit">
+            <input id="credit" class="credit1 credit" type="text" placeholder="Credit">
             <br>
             <input class="course" type="text" placeholder="Course Name(optional)">
             <label for="cars">Grade:</label>
-            <select name="cars" id="cars" class="grades">
+            <select name="cars" id="cars" class="grades1 grades">
                 <option value="A+">A+</option>
                 <option value="A">A</option>
                 <option value="A-">A-</option>
@@ -61,11 +61,11 @@
                 <option value="D">D</option>
                 <option value="F">F</option>
             </select>
-            <input id="credit" class="credit" type="text" placeholder="Credit">
+            <input id="credit" class="credit1 credit" type="text" placeholder="Credit">
             <br>
             <input class="course" type="text" placeholder="Course Name(optional)">
             <label for="cars">Grade:</label>
-            <select name="cars" id="cars" class="grades">
+            <select name="cars" id="cars" class="grades1 grades">
                 <option value="A+">A+</option>
                 <option value="A">A</option>
                 <option value="A-">A-</option>
@@ -77,13 +77,17 @@
                 <option value="D">D</option>
                 <option value="F">F</option>
             </select>
-            <input id="credit" class="credit" type="text" placeholder="Credit">
+            <input id="credit" class="credit1 credit" type="text" placeholder="Credit">
             <br>
             </div>
             <i id="add-row" class="fa-solid fa-circle-plus"></i>
+            <button class="calculate-gpa" id="calculate-gpa" onclick="calculateGPA()">Calculate Gpa</button>
+            <p class="mygpa" id="gpa1"></p>
+            
         </div>
        
         <button id="calculate-btn">Calculate <br>GPA</button>
+        <p id="cgpa"></p>
         <button id="add-semester"><i class="fa-solid fa-bars"></i> Add Semester</button>
     </div>
 
