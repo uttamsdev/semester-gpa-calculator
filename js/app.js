@@ -233,10 +233,10 @@ function calculateGPA(id){
    console.log(value);
    for(let i = 0; i < credit.length; i++){
        credits[i] = credit[i].value;
-    //    if(isNaN(credits[i]) || credits[i] == ''){
-    //        alert('Enter credits');
-    //        return;
-    //    }
+       if(isNaN(credits[i]) || credits[i] == ''){
+           alert('Enter credits');
+           return;
+       }
     //    if(credits[i] == 1 || credits[i] == 3){
 
     //    }
@@ -299,6 +299,7 @@ function calculateGPA(id){
 
 document.getElementById('calculate-btn').addEventListener('click',()=>{
     const myCgpa = cgpa/mapCount;
+    document.getElementById('cgpa').style.display = 'block';
     document.getElementById('cgpa').innerText = `GGPA = ${myCgpa}`;
     console.log(myCgpa);
 })
