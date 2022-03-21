@@ -3,7 +3,7 @@ document.getElementById('add-row').addEventListener('click', function(){
     const div = document.createElement('div');
     div.innerHTML = ` <input class="course" type="text" placeholder="Course Name(optional)">
             <label for="cars">Grade:</label>
-            <select name="cars" id="cars" class="grades">
+            <select name="cars" id="cars" class="grades1 grades">
                 <option value="A+">A+</option>
                 <option value="A">A</option>
                 <option value="A-">A-</option>
@@ -15,7 +15,7 @@ document.getElementById('add-row').addEventListener('click', function(){
                 <option value="D">D</option>
                 <option value="F">F</option>
             </select>
-            <input id="credit" class="credit" type="text" placeholder="Credit">
+            <input id="credit" class="credit credit1" type="text" placeholder="Credit">
             <br>`
             items.appendChild(div);
 });
@@ -114,7 +114,7 @@ function addRows(count,id) {
     div.innerHTML = `
     <input class="course" type="text" placeholder="Course Name(optional)">
             <label for="cars">Grade:</label>
-            <select name="cars" id="cars" class="grades">
+            <select name="cars" id="cars" class="grades${mapCount} grades">
                 <option value="A+">A+</option>
                 <option value="A">A</option>
                 <option value="A-">A-</option>
@@ -126,9 +126,10 @@ function addRows(count,id) {
                 <option value="D">D</option>
                 <option value="F">F</option>
             </select>
-            <input id="credit" class="credit" type="text" placeholder="Credit">
+            <input id="credit" class="credit${mapCount} credit" type="text" placeholder="Credit">
             <br>`;
             parent.appendChild(div);
+            console.log(count);
     
 }
 // document.getElementById('calculate-btn').addEventListener('click', function(){
@@ -212,9 +213,10 @@ function addRows(count,id) {
 function calculateGPA(id){
     let allGrades = [];
     const gradeClass = `grades${mapCount}`;
+    console.log('grade class = ',gradeClass);
     console.log(gradeClass);
     const grades = document.getElementsByClassName(gradeClass);
-    if(allGrades.length >= 4){
+    if(allGrades.length != null){
         allGrades = [];
     }
     for(const grade of grades){

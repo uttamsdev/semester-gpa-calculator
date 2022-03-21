@@ -6,6 +6,18 @@
 }
 body {
   position: relative;
+  /* background-image: url(../Images/E1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: rgba(242, 211, 247, 0.952);
+}
+.banner{
+    text-align: center;
+    color: crimson;
+}
+.banner img{
+    width: 150px;
+    margin-top: 50px;
 }
 .container {
   display: flex;
@@ -24,9 +36,11 @@ body {
 }
 #items input{
     border: 1px solid lightgray;
+    outline: none;
 }
 #cars{
     border: 1px solid lightgray;
+    outline: none;
 }
 .credit {
   height: 40px;
@@ -45,6 +59,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 40px;
   border-radius: 20px;
+  background-color: salmon;
 }
 .fa-circle-plus {
   font-size: 30px;
@@ -100,10 +115,13 @@ body {
 }
 .mygpa {
   text-align: center;
-  color: red;
+  color: white;
+  background-color: blue;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  margin-bottom: 10px;
 }
 #cgpa {
-  background-color: red;
+  background-color: crimson;
   color: white;
   text-align: center;
   font-weight: bolder;
@@ -111,3 +129,4 @@ body {
   border-radius: 5px;
   display: none;
 }
+
