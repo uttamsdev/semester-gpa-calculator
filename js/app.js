@@ -25,9 +25,9 @@ document.getElementById('add-row').addEventListener('click', function(){
   let mapCount = 1;
 document.getElementById('add-semester').addEventListener('click', function(){
     const items = document.getElementById('item');
-    const div = document.createElement('div');
+    const section = document.createElement('section');
   
-    div.innerHTML = `
+    section.innerHTML = `
             <div id="items">
             <h3 class="semester-title">SEMESTER - ${count}</h3>
             <input class="course" type="text" placeholder="Course Name(optional)">
@@ -94,8 +94,9 @@ document.getElementById('add-semester').addEventListener('click', function(){
             </select>
             <input id="credit${count}" class="credit${count} credit" type="text" placeholder="Credit">
             <br>
-            </div>
             <i id="add-row${count}" onclick="addRows(${count},id)" class="fa-solid fa-circle-plus"></i>
+            </div>
+            
             <button class="calculate-gpa" id="calculate-gpa${count}" onclick="calculateGPA(id)">Calculate Gpa</button>
             <p class="mygpa" id="gpa${mapCount+1}"></p>
             `
@@ -103,7 +104,7 @@ document.getElementById('add-semester').addEventListener('click', function(){
             
             mapCount =  count;
             count = count + 1;
-        items.appendChild(div);
+        items.appendChild(section);
 })
 
 function addRows(count,id) {
