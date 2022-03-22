@@ -33,6 +33,7 @@ document.getElementById('add-semester').addEventListener('click', function(){
             <input class="course" type="text" placeholder="Course Name(optional)">
             <label for="cars">Grade:</label>
             <select name="cars" id="cars" class="grades${count} grades">
+                <option value="" disabled selected>Grade</option>
                 <option value="A+">A+</option>
                 <option value="A">A</option>
                 <option value="A-">A-</option>
@@ -50,6 +51,7 @@ document.getElementById('add-semester').addEventListener('click', function(){
             <input class="course" type="text" placeholder="Course Name(optional)">
             <label for="cars">Grade:</label>
             <select name="cars" id="cars" class="grades${count} grades">
+                <option value="" disabled selected>Grade</option>
                 <option value="A+">A+</option>
                 <option value="A">A</option>
                 <option value="A-">A-</option>
@@ -67,6 +69,7 @@ document.getElementById('add-semester').addEventListener('click', function(){
             <input class="course" type="text" placeholder="Course Name(optional)">
             <label for="cars">Grade:</label>
             <select name="cars" id="cars" class="grades${count} grades">
+                <option value="" disabled selected>Grade</option>
                 <option value="A+">A+</option>
                 <option value="A">A</option>
                 <option value="A-">A-</option>
@@ -84,6 +87,7 @@ document.getElementById('add-semester').addEventListener('click', function(){
             <input class="course" type="text" placeholder="Course Name(optional)">
             <label for="cars">Grade:</label>
             <select name="cars" id="cars" class="grades${count} grades">
+                <option value="" disabled selected>Grade</option>
                 <option value="A+">A+</option>
                 <option value="A">A</option>
                 <option value="A-">A-</option>
